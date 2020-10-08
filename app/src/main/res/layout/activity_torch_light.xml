@@ -17,6 +17,29 @@
             android:layout_marginTop="50dp"
             android:layout_gravity="top|center"
             />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp">
+
+            <ImageButton
+                android:id="@+id/switch_off"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/switch_off_btn"
+                />
+
+            <ImageButton
+                android:id="@+id/switch_on"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/switch_on_btn" />
+
+        </RelativeLayout>
+
         <LinearLayout
             android:id="@+id/fullscreen_content_controls"
             style="?metaButtonBarStyle"
@@ -25,6 +48,7 @@
             android:layout_gravity="bottom|center_horizontal"
             android:gravity="center"
             android:orientation="horizontal"
+            android:visibility="gone"
             tools:ignore="UselessParent">
             <LinearLayout
                 android:orientation="vertical"
@@ -43,16 +67,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/toggletorchbtn"
-                    android:height="100dp"
-                    android:width="100dp"
+                    android:height="150dp"
+                    android:width="150dp"
                     android:layout_gravity="center"
                     android:background="@drawable/btn_1"
                     android:textAlignment="center" />
             </LinearLayout>
 
         </LinearLayout>
-
-
 
     </FrameLayout>
 
